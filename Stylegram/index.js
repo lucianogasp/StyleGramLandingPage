@@ -69,6 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('hashchange', () => {
         switch(window.location.hash) {
             case "#nossa-comunidade":
+                document.querySelector('#section').style = 'display: none';
                 render_nossaComunidade();
                 break;
             default:

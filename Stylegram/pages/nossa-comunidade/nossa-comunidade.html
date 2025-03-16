@@ -1,0 +1,121 @@
+<style>
+    body {
+        p {
+            font-size: 0.7rem;
+            margin: 0;
+        }
+    }
+
+    .nossa-comunidade-section {
+        margin: 3.65rem 0 5.13rem 0;
+        padding: 1rem;
+
+        > #list-container {
+            max-width: 20.7rem;
+
+            > p {
+                color: #6F6C90;
+            }
+
+            > ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                > li {
+                    max-height: 4.1rem;
+                    line-height: 70%;
+
+                    > .div-image-list {
+                        height: 4rem;
+                        width: 4rem;
+                        background-color: #ffffff;
+                        border: 1px solid black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden; /* Para garantir que nada ultrapasse os limites */                        
+ 
+                        > img {
+                            max-width: 100%;  /* Evita que a imagem seja maior que a div */
+                            max-height: 100%;
+                            object-fit: cover; /* Ajusta a imagem sem distorcer */
+                            display: block; /* Evita que a imagem adicione espaços extras */                        }
+                    }
+                    
+                    > div > p {
+                        font-size: 0.5rem;
+                        text-align: start;
+                        color: #373D4C;
+                    }
+                }
+            }
+        }
+
+        > #image-container {
+            width: 38vw;
+            max-width: 21rem;
+            height: 66vh;
+            max-height: 27rem;
+            background-color: #ffffff;
+        }
+    }
+</style>
+<div class="nossa-comunidade-section flex-box-spacearound background-gradient-colorful">
+
+    <div id="list-container" >
+        <h2 class="font-gradient-black" >Nós somos uma Comunidade!</h2>
+        <p>A StyleGram é uma rede social para você libertar sua criatividade e experimentar combinações de roupas e compartilhar seus looks!</p>
+        <ul>
+            <li class="flex-box-spacebetween" style="gap: 0;">
+                <div class="div-image-list">
+                    <img src="../../assets/list-nossacomunidade1.png" alt="list-nossacomunidade1">
+                </div>
+                <div>
+                    <h3 class="border-title">Seu Guarda-Roupa virtual</h3>
+                    <p>Tire fotos das suas roupas e monte seu Closet Virtual para todas as ocasiões! Seja um festival, carnaval ou rolê com amigos!</p>
+                </div>
+            </li>
+            <li class="flex-box-spacebetween">
+                <div class="div-image-list">
+                    <img src="../../assets/list-nossacomunidade2.png" alt="list-nossacomunidade2">
+                </div>
+                <div>
+                    <h3 class="border-title">Faça amizades e se inspire</h3>
+                    <p>Siga amigos, influenciadores e marcas. Veja suas publicações e as peças usadas, se você gostou, você pode vestir em um clique.</p>
+                </div>
+            </li>
+            <li class="flex-box-spacebetween">
+                <div class="div-image-list">
+                    <img src="../../assets/list-nossacomunidade3-red.png" alt="list-nossacomunidade3">
+                </div>
+                <div>
+                    <h3 class="border-title">Salve as peças que você mais gostar</h3>
+                    <p>Gostou de alguma peça em específico? Deixe-a guardada em uma pasta de coleções para experimentar depois! Sempre é bom se manter preparada.</p>
+                </div>
+            </li>
+            <li class="flex-box-spacebetween">
+                <div class="div-image-list">
+                    <img src="../../assets/list-nossacomunidade4.png" alt="list-nossacomunidade4">
+                </div>
+                <div>
+                    <h3 class="border-title">Compartilhe seus visuais! </h3>
+                    <p>Faça um post ou stories com suas criações e crie tendências, participe de desafios ou peça conselhos para seus seguidores!</p>
+                </div>
+            </li>
+            <li class="flex-box-spacebetween">
+                <div class="div-image-list">
+                    <img src="../../assets/list-nossacomunidade5.png" alt="list-nossacomunidade5">
+                </div>
+                <div>
+                    <h3 class="border-title">Faça suas comprinhas aqui!</h3>
+                    <p>Marcas de Roupa também estarão na comunidade, lançando suas coleções. Achou algo interessante? Experimente e compre diretamente no App!</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="image-container" class="border-shadow-gray">
+
+    </div>
+
+</div>
