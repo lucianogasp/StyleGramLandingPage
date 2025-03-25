@@ -1,4 +1,31 @@
-section {
-    flex-grow: 1;
-    flex-basis: 0;
+.video-slides {
+
+    > video {
+        aspect-ratio: 1133 / 625;
+        max-width: 86vw;
+        max-height: 65.5vh;
+        object-fit: cover;
+    }
+
+    /* > .overlay {
+        grid-template-columns: 1fr 25rem 1fr;
+        gap: 2rem;    
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        > #arrow-left, #arrow-right {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        > #meetingButton {
+            visibility: hidden;
+            grid-column: 2;
+        }
+    } */
 }

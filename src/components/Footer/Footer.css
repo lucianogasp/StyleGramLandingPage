@@ -3,7 +3,7 @@ footer {
     height: auto;
     width: 100vw;
     box-sizing: border-box;
-    padding: 0 1rem;
+    padding: .5rem 1rem;
     align-items: center;
     
     font-size: .6rem;
