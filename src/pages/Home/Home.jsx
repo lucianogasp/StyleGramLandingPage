@@ -1,6 +1,7 @@
-// Components
+// import components
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
+import BackgroundColorful from '../../components/BackgroundColorful/BackgroundColorful.jsx';
 import VideoSlides from '../../components/VideoSlides/VideoSlides.jsx';
 
 function Home() {
@@ -8,7 +9,9 @@ function Home() {
     return (
         <>
             <Header />
-            <VideoSlides />
+            <BackgroundColorful>
+                <VideoSlides />
+            </BackgroundColorful>
             <Footer />
         </>
     )
