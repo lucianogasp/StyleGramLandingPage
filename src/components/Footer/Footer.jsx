@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className="flex jc-spacebetween">
             <img src="./icons/stylegram-logo-cnpj.png" alt="instagram-log-cnpj" />
-            <nav className='flex jc-center al-center'>
+            <nav className='flex jc-center al-center txtal-center'>
                 <h3 className="background-gradient-black">Redes Sociais:</h3>
                 <ul className='ul-none flex al-center'>
                     <li>
@@ -19,7 +19,7 @@ function Footer() {
                     </li>
                 </ul>
             </nav>
-            <nav className='flex jc-center al-center'>
+            <nav className='flex jc-center al-center txtal-center'>
                 <h3 className="background-gradient-black">Localização:</h3>
                 <ul className='ul-none flex al-center'>
                     <li>
@@ -30,7 +30,7 @@ function Footer() {
                     </li>
                 </ul>
             </nav>
-            <nav className='flex jc-center al-center'>
+            <nav className='flex jc-center al-center txtal-center'>
                 <h3 className="background-gradient-black">Contato:</h3>
                 <ul className='ul-none flex al-center'>
                     <li className='flex al-center'>

@@ -54,7 +54,7 @@ h3 {
     border-radius: 3.5rem;
     padding: .2rem 1rem;
     background: linear-gradient(90deg, #353A49, #6B7384);
-    color: #ffffff;
+    color: #fff;
 }
 
 .font-shadow-yellow {
@@ -85,6 +85,22 @@ h3 {
 }
 
 /* Display Centralization */
+
+.fd-column {
+    flex-direction: column;
+}
+
+.fd-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.fd-row {
+    flex-direction: row;
+}
+
+.fd-row-reverse {
+    flex-direction: row-reverse;
+}
 
 .jc-spacebetween {
     justify-content: space-between;
@@ -147,19 +163,3 @@ h3 {
     text-decoration: none;
     text-align: center;
 }
-
-
-
-
-
-
-.border-title {
-    color: #fff;
-    background-color: #F7AA67;
-    font-size: .7rem;
-    padding: .3rem;
-    white-space: nowrap;
-    border-radius: 3.5rem;
-}
-
-
