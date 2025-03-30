@@ -1,4 +1,4 @@
-section {
+.background-grow-flex {
     flex-grow: 1;
     flex-basis: 0;
 }

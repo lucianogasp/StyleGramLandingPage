@@ -63,7 +63,7 @@ function VideoSlides() {
     }
 
     return (
-        <div className="video-slides grid pc-center position-relative">
+        <div className="position-relative">
             <video key={source} autoPlay loop muted className="border-shadow-gray">
                 <source src={`./videos/${source}.mp4`} type="video/mp4" />
                 vídeo com problema

@@ -9,7 +9,7 @@ function Home() {
     return (
         <>
             <Header />
-            <BackgroundColorful>
+            <BackgroundColorful incrementedClasses='grid pc-center' >
                 <VideoSlides />
             </BackgroundColorful>
             <Footer />
