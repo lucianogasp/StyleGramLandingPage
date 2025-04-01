@@ -12,16 +12,16 @@ function Header() {
                 <nav>
                     <ul className='ul-none al-center'>
                         <li>
-                            <Link to='nossa-proposta' className='font-gradient-black'>Nossa Proposta</Link>
+                            <Link to='/nossa-proposta' className='font-gradient-black'>Nossa Proposta</Link>
                         </li>
                         <li>
-                            <Link to='para-empresas' className="font-gradient-black">Para Empresas</Link>
+                            <Link to='/para-empresas' className="font-gradient-black">Para Empresas</Link>
                         </li>
                         <li>
-                            <Link to='nossa-equipe' className="font-gradient-black">Nossa Equipe</Link>
+                            <Link to='/nossa-equipe' className="font-gradient-black">Nossa Equipe</Link>
                         </li>
                         <li>
-                            <Link to='login' className="login-button">Fazer Login</Link>
+                            <Link to='/login' className="login-button">Fazer Login</Link>
                         </li>
                     </ul>
                 </nav>
