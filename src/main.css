@@ -1,7 +1,7 @@
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-/* Tag Style ====================================================================== */
+/* Native Tags Style ====================================================================== */
 
 * {
   margin: 0;
@@ -16,12 +16,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/* #root {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 h1 {
   font-size: 2.4rem;
   font-weight: 900;
@@ -37,20 +31,14 @@ h3 {
   margin: 0;
 }
 
-/* Utility Classes Style ======================================================================*/
+/* Custom Classes Styles ======================================================================*/
 
-/* Font/Block Color */
+/* Fonts */
 .font-c-black {
   background: linear-gradient(90deg, #353A49, #6B7384);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
-.backg-c-black {
-  background: linear-gradient(90deg, #353A49, #6B7384);
-  color: #fff;
-  border-radius: 3.5rem;
-  padding: .2rem 1rem;
 }
 .font-shdw-yellow {
   color: white;
@@ -61,6 +49,14 @@ h3 {
     .05rem -.05rem #BD9E70,
     -.05rem -.05rem #BD9E70;
 }
+
+/* Blocks */
+.backg-c-black {
+  background: linear-gradient(90deg, #353A49, #6B7384);
+  color: #fff;
+  border-radius: 3.5rem;
+  padding: .2rem 1rem;
+}
 .border-shdw-gray {
   border: .7rem solid white;
   border-radius: 1.5rem;
@@ -68,81 +64,7 @@ h3 {
   box-sizing: border-box;
 }
 
-/* Font Style */
-.font-s-p6 {
-  font-size: .6rem;
-}
-.font-w-8 {
-  font-weight: 800;
-}
-
-/* Display */
-.flex {
-  display: flex;
-}
-.grid {
-  display: grid;
-}
-
-/* Display Direction */
-.fd-column {
-  flex-direction: column;
-}
-.fd-column_reverse {
-  flex-direction: column-reverse;
-}
-.fd-row {
-  flex-direction: row;
-}
-.fd-row_reverse {
-  flex-direction: row-reverse;
-}
-
-/* Alignment */
-.jc-center {
-  justify-content: center;
-}
-.jc-start {
-  justify-content: flex-start;
-}
-.jc-spacebetween {
-  justify-content: space-between;
-}
-.jc-spacearound {
-  justify-content: space-around;
-}
-.pc-center {
-  place-content: center;
-}
-.pi-center {
-  place-items: center;
-}
-.al-center {
-  align-items: center;
-}
-.al-start {
-  align-items: start;
-}
-.txt-al-center {
-  text-align: center;
-}
-
-/* Position */
-.pos-rel {
-  position: relative;
-}
-.pos-abs {
-  position: absolute;
-}
-
-/* Component Style ======================================================================*/
-
-/* Lists */
-.ul-none {
-  list-style-type: none;
-}
-
-/* Button */
+/* Buttons */
 .login-button {
   background-color: #F7AA67;
   color: #fff;

@@ -5,13 +5,12 @@ import { Link } from 'react-router-dom';
 // import assets
 import { stylegramLogo } from '@/assets/icons';
 
-
 export function Header() {
   return (
-    <header className='flex jc-spacebetween al-center'>
+    <header>
       <img src={stylegramLogo} alt="stylegram-logo" />
       <nav>
-        <ul className='flex ul-none'>
+        <ul>
           <li>
             <Link to='/nossa-proposta'
                   className='font-c-black'

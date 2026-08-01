@@ -6,11 +6,12 @@ import { stylegramLogoCnpj, linkedin, instagram, tiktok, map, whatsapp, mail } f
 
 export function Footer() {
   return (
-    <footer className='flex jc-spacebetween al-center'>
+    <footer>
       <img src={stylegramLogoCnpj} alt="stylegram-logo-cnpj" />
-      <nav className='flex al-center'>
+    
+      <nav>
         <h3 className='backg-c-black'>Redes Sociais:</h3>
-        <ul className='flex'>
+        <ul>
           <li>
             <img src={linkedin} alt="linkedin" />
           </li>
@@ -22,9 +23,10 @@ export function Footer() {
           </li>
         </ul>
       </nav>
-      <nav className='flex al-center'>
+    
+      <nav>
         <h3 className='backg-c-black'>Localização:</h3>
-        <ul className='flex'>
+        <ul>
           <li>
             <img src={map} alt="map" />
           </li>
@@ -33,19 +35,21 @@ export function Footer() {
           </li>
         </ul>
       </nav>
-      <nav className='flex al-center'>
+    
+      <nav>
         <h3 className='backg-c-black'>Contato:</h3>
-        <ul className='flex fd-column al-start'>
-          <li className='flex'>
+        <ul>
+          <li>
             <img src={whatsapp} alt="whatsapp" />
             <p>41-984012126</p>
           </li>
-          <li className='flex'>
+          <li>
             <img src={mail} alt="mail" />
             <p>adm.stylegram@gmail.com</p>
           </li>
         </ul>
       </nav>
+    
     </footer>
   )
 }

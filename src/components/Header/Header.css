@@ -1,11 +1,16 @@
 header {
   background-color: #fff;
+  display: flex;
+  gap: .5rem;
+  justify-content: space-between;
+  align-items: center;
   height: auto;
   width: 100vw;
   padding: .5rem 1rem;
-  gap: .5rem;
 }
 header nav ul {
+  list-style-type: none;
+  display: flex;
   gap: 2rem;
   font-weight: 800;
 }
