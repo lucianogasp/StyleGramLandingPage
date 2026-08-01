@@ -1,84 +1,81 @@
+// import modules
 import './VideoSlides.css';
-
-// import components
-import TextSlides from '../TextSlides/TextSlides.jsx';
-
-// import Hooks
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function VideoSlides() {
-
-    const sourceList = [
-        'video1',
-        'video2',
-        'video3',
-        'video4',
-        'video5'
-    ]
-    const textList = [
-        'Uma nova forma de ver seu Guarda Roupa',
-        'Uma nova forma de provar suas roupas',
-        'Uma nova forma de fazer compras online',
-        'Uma nova forma de interagir'
-    ]
-
-    const [source, setSource] = useState(sourceList[0]);
-    const [text, setText] = useState(textList[0]);
-    const [displayArrowLeft, setDisplayArrowLeft] = useState('none');
-    const [displayArrowRight, setDisplayArrowRight] = useState('block');
-    const [displayMeetingButton, setDisplayMeetingButton] = useState('none');
-
-    function arrowLeftButton() {
-        setSource( prevSource => {
-            const index = sourceList.findIndex(el => el == prevSource);
-            const newSource = sourceList[index - 1] || prevState;
-
-            setDisplayArrowLeft( index - 1 > 0 ? 'block' : 'none');
-            setDisplayArrowRight('block');
-            setDisplayMeetingButton('none');
-
-            return newSource;
-        })
-        setText( prevState => {
-            const index = textList.findIndex(el => el == prevState);
-            return textList[index - 1] || prevState;
-        })
-    }
-    function arrowRightButton() {
-        setSource( prevState => {
-            const index = sourceList.findIndex(el => el == prevState);
-            const newSource = sourceList[index + 1] || prevState;
-
-            setDisplayArrowLeft('block');
-            setDisplayArrowRight( index + 1 < sourceList.length - 1 ? 'block' : 'none');
-            setDisplayMeetingButton( index + 1 < sourceList.length - 1 ? 'none' : 'block');
+// import assets
+import { arrowLeft, arrowRight } from '@/assets/icons';
 
 
-            return newSource;
-        })
-        setText( prevState => {
-            const index = textList.findIndex(el => el == prevState);
-            return textList[index + 1] || prevState;
-        })
-    }
-
-    return (
-        <div className="position-relative">
-            <video key={source} autoPlay loop muted className="border-shadow-gray">
-                <source src={`./videos/${source}.mp4`} type="video/mp4" />
-                vídeo com problema
-            </video>
-
-            <TextSlides 
-                text={text}
-                arrowLeftButton={arrowLeftButton} 
-                arrowRightButton={arrowRightButton} 
-                displayArrowLeft={displayArrowLeft} 
-                displayArrowRight={displayArrowRight} 
-                displayMeetingButton={displayMeetingButton}
-            />
-        </div>
-    )
+const sourceData = {
+  1: {
+    arrowLeftDisplayClass: 'arrow hidden',
+    arrowRightDisplayClass: 'arrow revealed',
+    videoSrc: './videos/video1.mp4',
+    txtSrc: 'Uma nova forma de ver seu Guarda Roupa'
+  },
+  2: {
+    arrowLeftDisplayClass: 'arrow revealed',
+    arrowRightDisplayClass: 'arrow revealed',
+    videoSrc: './videos/video2.mp4',
+    txtSrc: 'Uma nova forma de provar suas roupas'
+  },
+  3: {
+    arrowLeftDisplayClass: 'arrow revealed',
+    arrowRightDisplayClass: 'arrow revealed',
+    videoSrc: './videos/video3.mp4',
+    txtSrc: 'Uma nova forma de fazer compras online'
+  },
+  4: {
+    arrowLeftDisplayClass: 'arrow revealed',
+    arrowRightDisplayClass: 'arrow revealed',
+    videoSrc: './videos/video4.mp4',
+    txtSrc: 'Uma nova forma de divulgar seus looks'
+  },
+  5: {
+    arrowLeftDisplayClass: 'arrow revealed',
+    arrowRightDisplayClass: 'arrow hidden',
+    videoSrc: './videos/video5.mp4',
+    txtSrc: 'Uma nova forma de interagir',
+    paragraphButton: true
+  }
 }
 
-export default VideoSlides;
+export function VideoSlides() {
+
+  const [queryId, setQueryId] = useState(1)
+
+  const toLeft = () => {
+    setQueryId(prev => prev - 1);
+  }
+  const toRight = () => {
+    setQueryId(prev => prev + 1);
+  }
+  return (
+    <div className='video-wrapper'>
+      <video key={queryId} autoPlay loop muted
+              className='border-shdw-gray'
+      >
+        <source src={sourceData[queryId].videoSrc} type='video/mp4' />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className='video-text-container'>
+        <img src={arrowLeft} alt="arrow-left"
+              className={sourceData[queryId].arrowLeftDisplayClass}
+              onClick={toLeft}
+        />
+        <h1 className='font-shdw-yellow'>{sourceData[queryId].txtSrc}</h1>
+        <img src={arrowRight} alt="arrow-right" 
+              className={sourceData[queryId].arrowRightDisplayClass}
+              onClick={toRight}
+        />
+        {sourceData[queryId]?.paragraphButton && (
+          <p >
+            <Link className='login-button' to='nossa-proposta'>Nos conheça melhor</Link>
+          </p>
+        )}
+      </div>
+    </div>
+  )
+}

@@ -1,24 +1,21 @@
 footer {
-    background-color: #fff;
-    height: auto;
-    width: 100vw;
-    box-sizing: border-box;
-    padding: .5rem 1rem;
-    align-items: center;
-    
-    font-size: .6rem;
-    font-weight: 800;
-    gap: 1rem;
+  background-color: #fff;
+  height: auto;
+  width: 100vw;
+  padding: .5rem 1rem;
 
-    > nav {
-        gap: .5rem;
-
-        > ul, li {
-            gap: .5rem;
-        }
-    }
+  font-size: .6rem;
+  font-weight: 800;
+  gap: .5rem;
 }
-
-/*media querry para responsividade das lista do footer*/
-
-
+footer nav {
+  gap: 1rem;
+}
+footer nav ul {
+  list-style-type: none;
+  align-items: center;
+  gap: .5rem;
+}
+footer nav ul li {
+  gap: .5rem;
+}

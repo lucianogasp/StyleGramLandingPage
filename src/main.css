@@ -1,165 +1,171 @@
-/* Main Style - Basic Style */
-
-/* Importando fontes */
+/* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+/* Tag Style ====================================================================== */
 
-/* TAGS */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
-    font-family: 'DM Sans';
-    font-size: 23px;
+  font-family: 'DM Sans';
+  font-size: 23px;
 }
-
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
-#root {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
+/* #root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
 h1 {
-    font-size: 2.4rem;
-    font-weight: 900;
-    margin: 0;
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin: 0;
 }
 h2 {
-    font-size: 1.3rem;
-    font-weight: 900;
-    margin: 0;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 0;
 }
 h3 {
-    font-size: .7rem;
-    margin: 0;
+  font-size: .7rem;
+  margin: 0;
 }
 
-/* CLASSES */
+/* Utility Classes Style ======================================================================*/
 
-/* Styling Blocks and Colors */
-
-.font-gradient-black {
-    background: linear-gradient(90deg, #353A49, #6B7384);
-    
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+/* Font/Block Color */
+.font-c-black {
+  background: linear-gradient(90deg, #353A49, #6B7384);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.backg-c-black {
+  background: linear-gradient(90deg, #353A49, #6B7384);
+  color: #fff;
+  border-radius: 3.5rem;
+  padding: .2rem 1rem;
+}
+.font-shdw-yellow {
+  color: white;
+  text-shadow: 
+    0 .2rem .5rem #BD9E70,
+    .05rem .05rem #BD9E70,
+    -.05rem .05rem #BD9E70,
+    .05rem -.05rem #BD9E70,
+    -.05rem -.05rem #BD9E70;
+}
+.border-shdw-gray {
+  border: .7rem solid white;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 2rem -1rem grey;
+  box-sizing: border-box;
 }
 
-.background-gradient-black {
-    border-radius: 3.5rem;
-    padding: .2rem 1rem;
-    background: linear-gradient(90deg, #353A49, #6B7384);
-    color: #fff;
+/* Font Style */
+.font-s-p6 {
+  font-size: .6rem;
 }
-
-.font-shadow-yellow {
-    color: white;
-    text-shadow: 
-        0 .2rem .5rem #BD9E70,
-        .05rem .05rem #BD9E70,
-        -.05rem .05rem #BD9E70,
-        .05rem -.05rem #BD9E70,
-        -.05rem -.05rem #BD9E70;
-}
-
-.border-shadow-gray {
-    border: .7rem solid white;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 2rem -1rem grey;
-    box-sizing: border-box;
+.font-w-8 {
+  font-weight: 800;
 }
 
 /* Display */
-
 .flex {
-    display: flex;
+  display: flex;
 }
-
 .grid {
-    display: grid;
+  display: grid;
 }
 
-/* Display Centralization */
-
+/* Display Direction */
 .fd-column {
-    flex-direction: column;
+  flex-direction: column;
 }
-
-.fd-column-reverse {
-    flex-direction: column-reverse;
+.fd-column_reverse {
+  flex-direction: column-reverse;
 }
-
 .fd-row {
-    flex-direction: row;
+  flex-direction: row;
+}
+.fd-row_reverse {
+  flex-direction: row-reverse;
 }
 
-.fd-row-reverse {
-    flex-direction: row-reverse;
+/* Alignment */
+.jc-center {
+  justify-content: center;
 }
-
+.jc-start {
+  justify-content: flex-start;
+}
 .jc-spacebetween {
-    justify-content: space-between;
+  justify-content: space-between;
 }
-
 .jc-spacearound {
-    justify-content: space-around;
+  justify-content: space-around;
 }
-
-.ji-center {
-    justify-items: center;
-}
-
 .pc-center {
-    place-content: center;
+  place-content: center;
 }
-
 .pi-center {
-    place-items: center;
+  place-items: center;
 }
-
-/* Element Centralization */
-
 .al-center {
-    align-items: center;
+  align-items: center;
 }
-
-.txtal-center {
-    text-align: center;
+.al-start {
+  align-items: start;
+}
+.txt-al-center {
+  text-align: center;
 }
 
 /* Position */
-
-.position-relative {
-    position: relative;
+.pos-rel {
+  position: relative;
+}
+.pos-abs {
+  position: absolute;
 }
 
-.position-absolute {
-    position: absolute;
-}
+/* Component Style ======================================================================*/
 
-/* Elements: Lists */
-
+/* Lists */
 .ul-none {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
 }
 
-/* Elements: Button */
-
+/* Button */
 .login-button {
-    color: #fff;
-    background-color: #F7AA67;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0;
-    padding: .5rem 2rem;
-    border-radius: 3.5rem;
-    text-decoration: none;
-    text-align: center;
+  background-color: #F7AA67;
+  color: #fff;
+  margin: 0;
+  padding: .5rem 2rem;
+  border-radius: 3.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Arrows */
+.arrow.revealed {
+  visibility: visible;
+  opacity: 1;
+}
+.arrow.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.arrow:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform .2s ease;
 }
