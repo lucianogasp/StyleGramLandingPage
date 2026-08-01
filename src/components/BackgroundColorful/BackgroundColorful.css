@@ -4,6 +4,7 @@
   radial-gradient(circle at 40% 95%, #F29677 10%, transparent 65%),
   linear-gradient(-45deg, #F29677 10%, transparent 60%);
 
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
-  flex-basis: 0;
 }

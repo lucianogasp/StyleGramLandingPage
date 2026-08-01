@@ -5,7 +5,7 @@ video {
   object-fit: cover;
 }
 
-.video-wrapper {
+.video-slides-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;

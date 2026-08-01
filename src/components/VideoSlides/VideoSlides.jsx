@@ -42,7 +42,6 @@ const sourceData = {
 }
 
 export function VideoSlides() {
-
   const [queryId, setQueryId] = useState(1)
 
   const toLeft = () => {
@@ -51,8 +50,9 @@ export function VideoSlides() {
   const toRight = () => {
     setQueryId(prev => prev + 1);
   }
+
   return (
-    <div className='video-wrapper'>
+    <div className='video-slides-wrapper'>
       <video key={queryId} autoPlay loop muted
               className='border-shdw-gray'
       >
