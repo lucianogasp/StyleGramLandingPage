@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 // import assets
 import { arrowLeft, arrowRight } from '@/assets/icons';
 
-
 const sourceData = {
   1: {
     arrowLeftDisplayClass: 'arrow hidden',

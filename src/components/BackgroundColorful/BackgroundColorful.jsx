@@ -3,8 +3,8 @@ import './BackgroundColorful.css';
 
 export function BackgroundColorful({ children }) {
   return (
-    <div className='background-colorful'>
+    <main className='background-colorful'>
       {children}
-    </div>
+    </main>
   )
 }

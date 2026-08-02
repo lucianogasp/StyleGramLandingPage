@@ -7,7 +7,7 @@ import { stylegramLogo } from '@/assets/icons';
 
 export function Header() {
   return (
-    <header>
+    <header className='main-header'>
       <img src={stylegramLogo} alt="stylegram-logo" />
       <nav>
         <ul>

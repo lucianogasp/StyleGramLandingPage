@@ -1,4 +1,4 @@
-footer {
+.main-footer {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -11,23 +11,23 @@ footer {
   font-size: .6rem;
   font-weight: 800;
 }
-footer nav {
+.main-footer nav {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-footer nav ul {
+.main-footer nav ul {
   list-style-type: none;
   display: flex;
   gap: .5rem;
   align-items: center;
 }
-footer nav:last-child ul {
+.main-footer nav:last-child ul {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-footer nav:last-child ul li {
+.main-footer nav:last-child ul li {
   display: flex;
   gap: .5rem;
 }

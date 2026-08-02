@@ -6,7 +6,7 @@ import { stylegramLogoCnpj, linkedin, instagram, tiktok, map, whatsapp, mail } f
 
 export function Footer() {
   return (
-    <footer>
+    <footer className='main-footer'>
       <img src={stylegramLogoCnpj} alt="stylegram-logo-cnpj" />
     
       <nav>

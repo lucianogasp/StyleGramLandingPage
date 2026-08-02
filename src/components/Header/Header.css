@@ -1,4 +1,4 @@
-header {
+.main-header {
   background-color: #fff;
   display: flex;
   gap: .5rem;
@@ -8,7 +8,7 @@ header {
   width: 100vw;
   padding: .5rem 1rem;
 }
-header nav ul {
+.main-header nav ul {
   list-style-type: none;
   display: flex;
   gap: 2rem;
