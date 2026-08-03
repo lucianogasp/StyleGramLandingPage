@@ -4,11 +4,11 @@ import './PlataformFeaturesList.css';
 export function PlataformFeaturesList({ featuresList }) {
   return (
     <article className='plataform-features-article'>
-      <header>
-        <h2>{featuresList.headerSection.title}</h2>
+      <header className='font-c-black'>
+        <h2 className='font-c-black'>{featuresList.headerSection.title}</h2>
         <p>{featuresList.headerSection.lead}</p>
       </header>
-
+    
       <ul>
         {featuresList.listSection.map(item => {
           return (
@@ -16,16 +16,22 @@ export function PlataformFeaturesList({ featuresList }) {
               <figure>
                 <img src={item.image} alt={item.imageAlt} />
               </figure>
-                <h3>{item.title}</h3>
+              <div className='items-container'>
+                <h3 className='login-button'>{item.title}</h3>
                 <p>{item.text}</p>
+              </div>
             </li>
           )
         })}
       </ul>
-
-      <footer>
-        <span>{featuresList.footerSection.text1}</span>
-        <span>{featuresList.footerSection.text2}</span>
+    
+      <footer className='border-shdw-gray'>
+        <span>
+          <p className='font-c-black'>{featuresList.footerSection.text1}</p>
+        </span>
+        <span>
+          <p className='backg-c-black'>{featuresList.footerSection.text2}</p>
+          </span>
       </footer>
     </article>
   )

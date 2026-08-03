@@ -30,6 +30,9 @@ h3 {
   font-size: .7rem;
   margin: 0;
 }
+p {
+  font-size: .67rem;
+}
 
 /* Custom Classes Styles ======================================================================*/
 
@@ -60,8 +63,7 @@ h3 {
 .border-shdw-gray {
   border: .7rem solid white;
   border-radius: 1.5rem;
-  box-shadow: 0 0 2rem -1rem grey;
-  box-sizing: border-box;
+  box-shadow: 0 0 2rem -1rem #F7AA67;
 }
 
 /* Buttons */
