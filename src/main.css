@@ -8,13 +8,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body, #root {
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 html {
   font-family: 'DM Sans';
   font-size: 23px;
-}
-body {
-  margin: 0;
-  padding: 0;
 }
 h1 {
   font-size: 2.4rem;
@@ -60,8 +67,8 @@ p {
   border-radius: 3.5rem;
   padding: .2rem 1rem;
 }
-.border-shdw-gray {
-  border: .7rem solid white;
+.border-shdw-yellow {
+  border: .3rem solid white;
   border-radius: 1.5rem;
   box-shadow: 0 0 2rem -1rem #F7AA67;
 }

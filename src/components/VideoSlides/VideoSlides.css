@@ -2,6 +2,7 @@ video {
   aspect-ratio: 1133 / 625;
   max-width: 86vw;
   max-height: 65.5vh;
+  border-width: .5rem;
   object-fit: cover;
 }
 

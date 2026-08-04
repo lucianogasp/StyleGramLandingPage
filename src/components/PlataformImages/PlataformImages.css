@@ -1,0 +1,45 @@
+.plataform-images-section {
+  background-color: #fff;
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: auto minmax(3rem, auto) auto;
+  grid-template-rows: minmax(6rem, auto) 2rem auto;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: 
+    'aiGirl1      aiPlusSign   aiJacket'
+    'aiArrowSign1  .            aiArrowSign2'
+    'aiGirl2      aiGirl2      aiGirl2';
+}
+
+.plataform-images-section img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell-top-left {
+  grid-area: aiGirl1;
+  box-shadow: 0 0 2rem -.7rem #F7AA67;
+  border-radius: 2rem;
+}
+.cell-top-center {
+  grid-area: aiPlusSign;
+}
+.cell-top-right {
+  grid-area: aiJacket;
+  box-shadow: 0 0 2rem -.7rem #F7AA67;
+  border-radius: 2rem;
+}
+.cell-mid-left {
+  grid-area: aiArrowSign1;
+}
+.cell-mid-right {
+  grid-area: aiArrowSign2;
+}
+.cell-bottom {
+  grid-area: aiGirl2;
+  box-shadow: 0 0 2rem -.7rem #F7AA67;
+  border-radius: 2.4rem;
+}

@@ -1,7 +1,11 @@
+// import modules
+import './NossaProposta.css';
+
 // import components
 import { Header } from "@/components/Header/Header.jsx";
 import { BackgroundColorful } from "@/components/BackgroundColorful/BackgroundColorful.jsx";
 import { PlataformFeaturesList } from "@/components/PlataformFeaturesList/PlataformFeaturesList.jsx";
+import { PlataformImages } from "@/components/PlataformImages/PlataformImages.jsx";
 import { Footer } from "@/components/Footer/Footer.jsx";
 
 // import assets
@@ -57,10 +61,13 @@ const nosComunList = {
 
 export function NossaProposta() {
   return (
-    <div>
+    <div className='nossa-proposta-page'>
       <Header />
       <BackgroundColorful>
-        <PlataformFeaturesList featuresList={nosComunList} />
+        <section className="nossa-proposta-plataform-section">
+          <PlataformFeaturesList featuresList={nosComunList} />
+          <PlataformImages />
+        </section>
       </BackgroundColorful>
       <Footer />
     </div>

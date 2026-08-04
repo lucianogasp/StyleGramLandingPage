@@ -25,7 +25,7 @@ export function PlataformFeaturesList({ featuresList }) {
         })}
       </ul>
     
-      <footer className='border-shdw-gray'>
+      <footer className='border-shdw-yellow'>
         <span>
           <p className='font-c-black'>{featuresList.footerSection.text1}</p>
         </span>

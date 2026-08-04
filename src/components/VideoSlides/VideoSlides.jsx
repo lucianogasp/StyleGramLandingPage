@@ -53,7 +53,7 @@ export function VideoSlides() {
   return (
     <div className='video-slides-wrapper'>
       <video key={queryId} autoPlay loop muted
-              className='border-shdw-gray'
+              className='border-shdw-yellow'
       >
         <source src={sourceData[queryId].videoSrc} type='video/mp4' />
         Your browser does not support the video tag.
