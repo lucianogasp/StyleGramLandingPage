@@ -1,0 +1,31 @@
+.featuring-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  max-width: 18rem;
+  padding-top: 3rem;
+}
+.featuring-section figure {
+  display: flex;
+  justify-content: center;
+}
+.featuring-section img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: top;
+  width: 70%;
+  border: .3rem solid white;
+  border-radius: 50%;
+}
+.featuring-section h3:nth-of-type(1) {
+  width: 100%;
+  font-size: .8rem;
+}
+.featuring-section h3:nth-of-type(2) {
+  background-color: white;
+  padding: .2rem .5rem;
+  text-align: center;
+  width: 100%;
+}

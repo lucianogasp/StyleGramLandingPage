@@ -57,11 +57,11 @@ const parEmprList = {
     text1: 'Gostou do que viu?',
     text2: 'Demonstre aqui seu interesse'
   }
-}
+};
 
 export function ParaEmpresas() {
   return (
-    <div className='nossa-proposta-page'>
+    <div className='para-empresas-page'>
       <Header />
       <BackgroundColorful>
         <section className="para-empresas-plataform-section">

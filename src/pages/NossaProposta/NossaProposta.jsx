@@ -57,7 +57,7 @@ const nosComunList = {
     text1: 'Gostou do que viu?',
     text2: 'Demonstre aqui seu interesse'
   }
-}
+};
 
 export function NossaProposta() {
   return (

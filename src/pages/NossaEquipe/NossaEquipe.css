@@ -1,0 +1,13 @@
+.nossa-equipe-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.nossa-equipe-featuring-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+}
