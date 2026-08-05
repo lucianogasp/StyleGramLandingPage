@@ -1,0 +1,12 @@
+export { default as aiArrowSign } from './ai-arrowSign.png';
+export { default as aiPlusSign } from './ai-plusSign.png';
+export { default as arrowLeft } from './arrow-left.png';
+export { default as arrowRight } from './arrow-right.png';
+export { default as instagram } from './instagram.png';
+export { default as linkedin } from './linkedin.png';
+export { default as mail } from './mail.png';
+export { default as map } from './map.png';
+export { default as stylegramLogoCnpj } from './stylegram-logo-cnpj.png';
+export { default as stylegramLogo } from './stylegram-logo.png';
+export { default as tiktok } from './tiktok.png'
+export { default as whatsapp } from './whatsapp.png';

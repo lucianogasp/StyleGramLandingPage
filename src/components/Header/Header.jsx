@@ -1,22 +1,46 @@
+// import modules
 import './Header.css';
+import { Link } from 'react-router-dom';
 
-function Header () {
+// import assets
+import { stylegramLogo } from '@/assets/icons';
 
-    return (
-        <header>
-        <div class="div-header flex-box-spacebetween">
-            <img src="../../assets/stylegram-logo.png" alt="stylegram-logo" />
-            <nav class="nav-header">
-                <ul>
-                    <li class="font-gradient-black">Nossa Proposta</li>
-                    <li class="font-gradient-black">Para Empresas</li>
-                    <li class="font-gradient-black">Nossa Equipe</li>
-                    <li class="login-button">Fazer Login</li>
-                </ul>
-            </nav>
-        </div>
+export function Header() {
+  return (
+    <header className='main-header'>
+      <img src={stylegramLogo} alt="stylegram-logo" />
+      <nav>
+        <ul>
+          <li>
+            <h2>
+            <Link to='/nossa-proposta'
+                  className='font-c-black'
+            >Nossa Proposta</Link>
+            </h2>
+          </li>
+          <li>
+            <h2>
+            <Link to='/para-empresas'
+                  className='font-c-black'
+            >Para Empresas</Link>
+            </h2>
+          </li>
+          <li>
+            <h2>
+            <Link to='/nossa-equipe'
+                  className='font-c-black'
+            >Nossa Equipe</Link>
+            </h2>
+          </li>
+          <li>
+            <h2>
+            <Link to='/login'
+                  className='login-button'
+            >Fazer Login</Link>
+            </h2>
+          </li>
+        </ul>
+      </nav>
     </header>
-    )
+  )
 }
-
-export default Header;

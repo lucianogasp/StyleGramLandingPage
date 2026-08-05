@@ -1,0 +1,16 @@
+.main-header {
+  background-color: #fff;
+  display: flex;
+  gap: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+  padding: .5rem 1rem;
+}
+.main-header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  font-weight: 800;
+}

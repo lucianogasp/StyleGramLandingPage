@@ -1,0 +1,42 @@
+video {
+  aspect-ratio: 1133 / 625;
+  max-width: 86vw;
+  max-height: 65.5vh;
+  border-width: .5rem;
+  object-fit: cover;
+}
+
+.video-slides-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.video-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+
+  max-width: 35rem;
+  max-height: 6.5rem;
+
+  position: absolute;
+  top: calc(50% - 6.5rem / 2);
+  left: calc(50% -40rem / 2 );
+}
+.video-text-container h1 {
+  text-align: center;
+  align-items: center;
+  cursor: default;
+}
+.video-text-container p {
+  width: 15rem;
+  text-align: center;
+
+  position: absolute;
+  bottom: -100%;
+  left: calc(50% - 15rem / 2);
+}

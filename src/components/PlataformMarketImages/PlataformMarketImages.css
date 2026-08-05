@@ -1,0 +1,19 @@
+.plataform-market-images-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.plataform-market-images-section img {
+  width: 100%;
+  max-width: 16rem;
+}
+.plataform-market-images-section .image1 {
+  position: relative;
+  left: -3rem;
+}
+.plataform-market-images-section .image2 {
+  position: relative;
+  top: -5rem;
+  left: 3rem;
+}
