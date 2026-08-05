@@ -1,0 +1,12 @@
+.nossa-proposta-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.para-empresas-plataform-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+}

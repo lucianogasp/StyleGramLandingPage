@@ -1,5 +1,5 @@
 // import modules
-import './PlataformImages.css';
+import './PlataformIaImages.css';
 
 // import assets
 import { aiGirl1 } from '@/assets/images';
@@ -8,9 +8,9 @@ import { aiJacket } from '@/assets/images';
 import { aiArrowSign } from '@/assets/icons';
 import { aiPlusSign } from '@/assets/icons';
 
-export function PlataformImages() {
+export function PlataformIaImages() {
   return (
-    <section className="plataform-images-section border-shdw-yellow">
+    <section className="plataform-ia-images-section border-shdw-yellow">
       <div className='cell-top-left border-shdw-yellow'>
         <img src={aiGirl1} alt="ai girl 1" />
       </div>

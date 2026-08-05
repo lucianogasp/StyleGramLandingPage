@@ -1,4 +1,4 @@
-.plataform-images-section {
+.plataform-ia-images-section {
   background-color: #fff;
   padding: 1rem;
 
@@ -13,7 +13,7 @@
     'aiGirl2      aiGirl2      aiGirl2';
 }
 
-.plataform-images-section img {
+.plataform-ia-images-section img {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -5,7 +5,7 @@ import './NossaProposta.css';
 import { Header } from "@/components/Header/Header.jsx";
 import { BackgroundColorful } from "@/components/BackgroundColorful/BackgroundColorful.jsx";
 import { PlataformFeaturesList } from "@/components/PlataformFeaturesList/PlataformFeaturesList.jsx";
-import { PlataformImages } from "@/components/PlataformImages/PlataformImages.jsx";
+import { PlataformIaImages } from "@/components/PlataformIaImages/PlataformIaImages.jsx";
 import { Footer } from "@/components/Footer/Footer.jsx";
 
 // import assets
@@ -66,7 +66,7 @@ export function NossaProposta() {
       <BackgroundColorful>
         <section className="nossa-proposta-plataform-section">
           <PlataformFeaturesList featuresList={nosComunList} />
-          <PlataformImages />
+          <PlataformIaImages />
         </section>
       </BackgroundColorful>
       <Footer />

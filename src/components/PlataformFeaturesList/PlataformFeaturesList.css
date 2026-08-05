@@ -42,6 +42,7 @@
   flex-direction: column;
 }
 .plataform-features-article .items-container h3 {
+  font-size: .8rem;
   font-weight: 500;
   padding: .2rem 2rem;
 }
