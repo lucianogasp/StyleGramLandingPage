@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # files
-public/*.mp4
+public/videos/*
