@@ -20,7 +20,7 @@ const featuringHeitor = {
 const featuringMateus = {
   image: mateusFt,
   imageAlt: 'mateus-ft',
-  title: 'Mateus ...',
+  title: 'Mateus Fernandes de Souza',
   subtitle: 'Encontrar no LinkedIn',
   lead: 'CTO - StyleGram'
 };

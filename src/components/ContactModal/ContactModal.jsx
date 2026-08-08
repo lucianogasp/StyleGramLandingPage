@@ -3,6 +3,7 @@ import './ContactModal.css';
 
 // import components
 import { InputField } from '../InputField/InputField.jsx';
+import { TextareaField } from '../TextareaField/TextareaField.jsx';
 
 // import assets
 import { mailContact } from '@/assets/images';
@@ -50,10 +51,11 @@ export function ContactModal({ updateWrapper }) {
                       inputIdName={'contact-reason'} 
                       isRequired={true}
           />
-          <InputField type={'message'} 
-                      placeholder={'Escreva sua Mensagem para Contato aqui'} 
-                      labelText={'Mensagem:'} 
-                      inputIdName={'message'} 
+          <TextareaField textIdName={'textarea'}
+                          labelText={'Mensagem:'}
+                          placeholder={'Escreva sua Mensagem aqui...'}
+                          maxLength={500}
+                          rows={5}
           />
 
           <button className='login-button'>
