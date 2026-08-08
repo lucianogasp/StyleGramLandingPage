@@ -1,3 +1,4 @@
+export { default as mailContact } from './mail-contact.png';
 export { default as aiGirl1 } from './ai-girl1.png';
 export { default as aiGirl2 } from './ai-girl2.png';
 export { default as aiJacket } from './ai-jacket.png';

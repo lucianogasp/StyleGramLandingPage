@@ -9,7 +9,7 @@ import { Footer } from "@/components/Footer/Footer.jsx";
 
 export function Home() {
   return (
-    <div className='home-wrapper'>
+    <div className='home-page'>
       <Header />
       <BackgroundColorful>
         <VideoSlides />

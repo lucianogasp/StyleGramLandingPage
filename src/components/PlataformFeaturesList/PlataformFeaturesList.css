@@ -70,4 +70,10 @@
 .plataform-features-article footer span:nth-child(2) {
   font-weight: bold;
   text-align: center;
+  cursor: pointer;
+  transition: transform .1s ease;
+}
+.plataform-features-article footer span:nth-child(2):hover {
+  transform: scale(1.05);
+  transition: transform .3s ease;
 }

@@ -1,7 +1,7 @@
 // import modules
 import './PlataformFeaturesList.css';
 
-export function PlataformFeaturesList({ featuresList }) {
+export function PlataformFeaturesList({ featuresList, updateWrapper }) {
   return (
     <article className='plataform-features-article'>
       <header className='font-c-black'>
@@ -30,8 +30,8 @@ export function PlataformFeaturesList({ featuresList }) {
           <p className='font-c-black'>{featuresList.footerSection.text1}</p>
         </span>
         <span>
-          <p className='backg-c-black'>{featuresList.footerSection.text2}</p>
-          </span>
+          <p className='backg-c-black' onClick={updateWrapper}>{featuresList.footerSection.text2}</p>
+        </span>
       </footer>
     </article>
   )

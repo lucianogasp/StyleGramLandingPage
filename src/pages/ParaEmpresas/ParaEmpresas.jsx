@@ -1,5 +1,6 @@
 // import modules
 import './ParaEmpresas.css';
+import { useState } from 'react';
 
 // import components
 import { Header } from '@/components/Header/Header.jsx';
@@ -7,6 +8,7 @@ import { BackgroundColorful } from '@/components/BackgroundColorful/BackgroundCo
 import { PlataformFeaturesList } from '@/components/PlataformFeaturesList/PlataformFeaturesList.jsx';
 import { PlataformMarketImages } from '@/components/PlataformMarketImages/PlataformMarketImages.jsx';
 import { Footer } from '@/components/Footer/Footer.jsx';
+import { ContactModal } from '@/components/ContactModal/ContactModal.jsx';
 
 // import assets
 import { figParEmpr1, figParEmpr2, figParEmpr3, figParEmpr4, figParEmpr5 } from '@/assets/images';
@@ -60,16 +62,23 @@ const parEmprList = {
 };
 
 export function ParaEmpresas() {
+  const [isWrapperActive, setIsWrapperActive] = useState(false);
+
+  const updateWrapperActive = () => {
+    setIsWrapperActive(prev => !prev);
+  }
+
   return (
     <div className='para-empresas-page'>
       <Header />
       <BackgroundColorful>
         <section className="para-empresas-plataform-section">
           <PlataformMarketImages />
-          <PlataformFeaturesList featuresList={parEmprList} />
+          <PlataformFeaturesList updateWrapper={updateWrapperActive} featuresList={parEmprList} />
         </section>
       </BackgroundColorful>
       <Footer />
+      {isWrapperActive && ( <ContactModal updateWrapper={updateWrapperActive} /> )}
     </div>
   )
 }

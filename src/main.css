@@ -79,6 +79,18 @@ p {
   color: #fff;
   margin: 0;
   padding: .5rem 2rem;
+  border: none;
+  border-radius: 3.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+.login-button-secondary {
+  background-color: #FFF7EB;
+  color: #F7AA67;
+  margin: 0;
+  padding: .5rem 2rem;
   border-radius: 3.5rem;
   font-size: 1rem;
   font-weight: bold;

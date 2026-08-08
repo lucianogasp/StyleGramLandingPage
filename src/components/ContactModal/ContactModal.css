@@ -1,0 +1,63 @@
+.contact-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(0, 0, 0, 0.45);
+}
+
+.contact-modal-section {
+  background-color: white;
+  max-width: 100%;
+  padding: .5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: .5rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-modal-section div {
+  width: 100%;
+}
+.contact-modal-section .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+.contact-modal-section .header-wrapper span {
+  color: #F7AA67;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-modal-section form .figure-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: .7rem;
+  padding-bottom: .7rem;
+}
+.contact-modal-section form .figure-container figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-modal-section form .figure-container figure img {
+  width: 15rem;
+  background-color: #FFF7EB;
+  border-radius: 50%;
+}
+.contact-modal-section form .figure-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-modal-section button {
+  width: 100%;
+}

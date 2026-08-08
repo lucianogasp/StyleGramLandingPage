@@ -1,5 +1,6 @@
 // import modules
 import './NossaProposta.css';
+import { useState } from 'react';
 
 // import components
 import { Header } from "@/components/Header/Header.jsx";
@@ -7,6 +8,7 @@ import { BackgroundColorful } from "@/components/BackgroundColorful/BackgroundCo
 import { PlataformFeaturesList } from "@/components/PlataformFeaturesList/PlataformFeaturesList.jsx";
 import { PlataformIaImages } from "@/components/PlataformIaImages/PlataformIaImages.jsx";
 import { Footer } from "@/components/Footer/Footer.jsx";
+import { ContactModal } from '@/components/ContactModal/ContactModal.jsx';
 
 // import assets
 import { figNosComun1, figNosComun2, figNosComun3, figNosComun4, figNosComun5 } from '@/assets/images';
@@ -60,16 +62,23 @@ const nosComunList = {
 };
 
 export function NossaProposta() {
+  const [isWrapperActive, setIsWrapperActive] = useState(false);
+
+  const updateWrapperActive = () => {
+    setIsWrapperActive(prev => !prev);
+  }
+
   return (
     <div className='nossa-proposta-page'>
       <Header />
       <BackgroundColorful>
         <section className="nossa-proposta-plataform-section">
-          <PlataformFeaturesList featuresList={nosComunList} />
+          <PlataformFeaturesList updateWrapper={updateWrapperActive} featuresList={nosComunList} />
           <PlataformIaImages />
         </section>
       </BackgroundColorful>
       <Footer />
+      {isWrapperActive && ( <ContactModal updateWrapper={updateWrapperActive} /> )}
     </div>
   )
 }
