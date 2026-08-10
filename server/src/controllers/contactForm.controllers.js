@@ -2,6 +2,7 @@
 import { getAllFormService } from '#services/contactForm.services.js';
 import { getFormByIdService } from '#services/contactForm.services.js';
 import { createFormService } from '#services/contactForm.services.js';
+import { updateFormByIdService } from '#services/contactForm.services.js';
 import { deleteFormByIdService } from '#services/contactForm.services.js';
 
 export async function getAllFormController(req, res) {
@@ -27,6 +28,17 @@ export async function createFormController(req, res) {
   const newForm = req.body;
   try {
     const formMessage = await createFormService(newForm);
+    return res.status(200).send(formMessage);
+  } catch(err) {
+    return res.status(404).send(err.message);
+  }
+}
+
+export async function updateFormByIdController(req, res) {
+  const { id } = req.params;
+  const newForm = req.body;
+  try {
+    const formMessage = await updateFormByIdService(id, newForm);
     return res.status(200).send(formMessage);
   } catch(err) {
     return res.status(404).send(err.message);

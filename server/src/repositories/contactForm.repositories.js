@@ -71,6 +71,35 @@ export function createFormRepository(newForm) {
   });
 }
 
+export function updateFormByIdRepository(id, newForm) {
+  return new Promise((res, rej) => {
+    const fields = ['name', 'whatsapp_number', 'email', 'contact_reason', 'contact_message'];
+    let query = 'UPDATE contact_form SET';
+    let values = [];
+    fields.forEach(field => {
+      if (newForm[field] !== undefined) {
+        query += ` ${field} = ?,`;
+        values.push(newForm[field]);
+      }
+    });
+
+    query = query.slice(0, -1);
+    query += ' WHERE id = ?';
+    values.push(id);
+    db.run(
+      query,
+      values,
+      function(err) {
+        if(err) {
+          rej(err);
+        } else {
+          res({ ...newForm, id });
+        }
+      }
+    );
+  });
+}
+
 export function deleteFormByIdRepository(id) {
   return new Promise((res, rej) => {
     db.run(
