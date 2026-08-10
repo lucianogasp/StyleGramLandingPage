@@ -32,6 +32,25 @@ export function getAllFormRepository() {
   });
 }
 
+export function getFormByIdRepository(id) {
+  return new Promise((res, rej) => {
+    db.get(
+      `
+        SELECT * FROM contact_form
+        WHERE id = ?
+      `,
+      [id],
+      function(err, row) {
+        if(err) {
+          rej(err);
+        } else {
+          res(row);
+        }
+      }
+    );
+  });
+}
+
 export function createFormRepository(newForm) {
   return new Promise((res, rej) => {
     const { name, whatsappNumber, email, contactReason, ContactMessage } = newForm;
