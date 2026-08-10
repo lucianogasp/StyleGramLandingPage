@@ -1,9 +1,11 @@
 // import modules
-import { getAllFormRepository } from '#repositories/contactForm.repositories.js';
-import { getFormByIdRepository } from '#repositories/contactForm.repositories.js';
-import { createFormRepository } from '#repositories/contactForm.repositories.js';
-import { updateFormByIdRepository } from '#repositories/contactForm.repositories.js';
-import { deleteFormByIdRepository } from '#repositories/contactForm.repositories.js';
+import { 
+  getAllFormRepository, 
+  getFormByIdRepository, 
+  createFormRepository, 
+  updateFormByIdRepository, 
+  deleteFormByIdRepository 
+} from '#repositories/contactForm.repositories.js';
 
 export async function getAllFormService() {
   const form = await getAllFormRepository();

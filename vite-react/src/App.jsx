@@ -1,4 +1,4 @@
-// react-router-dom imports
+// import modules
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Pages

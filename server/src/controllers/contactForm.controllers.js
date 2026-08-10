@@ -1,9 +1,11 @@
 // import modules
-import { getAllFormService } from '#services/contactForm.services.js';
-import { getFormByIdService } from '#services/contactForm.services.js';
-import { createFormService } from '#services/contactForm.services.js';
-import { updateFormByIdService } from '#services/contactForm.services.js';
-import { deleteFormByIdService } from '#services/contactForm.services.js';
+import { 
+  getAllFormService, 
+  getFormByIdService, 
+  createFormService, 
+  updateFormByIdService, 
+  deleteFormByIdService 
+} from '#services/contactForm.services.js';
 
 export async function getAllFormController(req, res) {
   try {

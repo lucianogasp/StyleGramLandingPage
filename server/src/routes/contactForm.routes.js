@@ -1,10 +1,12 @@
 // import modules
 import { Router } from 'express';
-import { getAllFormController } from '#controllers/contactForm.controllers.js';
-import { getFormByIdController } from '#controllers/contactForm.controllers.js';
-import { createFormController } from '#controllers/contactForm.controllers.js';
-import { updateFormByIdController } from '#controllers/contactForm.controllers.js';
-import { deleteFormByIdController } from '#controllers/contactForm.controllers.js';
+import { 
+  getAllFormController, 
+  getFormByIdController, 
+  createFormController, 
+  updateFormByIdController, 
+  deleteFormByIdController 
+} from '#controllers/contactForm.controllers.js';
 
 const router = Router();
 
