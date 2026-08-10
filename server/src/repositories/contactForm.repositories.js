@@ -70,3 +70,22 @@ export function createFormRepository(newForm) {
     );
   });
 }
+
+export function deleteFormByIdRepository(id) {
+  return new Promise((res, rej) => {
+    db.run(
+      `
+        DELETE FROM contact_form
+        WHERE id = ?
+      `,
+      [id],
+      function(err) {
+        if(err) {
+          rej(err);
+        } else {
+          res({ message: 'form id successfully deleted...', id });
+        }
+      }
+    );
+  });
+}
