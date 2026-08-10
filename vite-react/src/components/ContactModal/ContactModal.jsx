@@ -54,7 +54,7 @@ export function ContactModal({ updateWrapper }) {
           <TextareaField textIdName={'textarea'}
                           labelText={'Mensagem:'}
                           placeholder={'Escreva sua Mensagem aqui...'}
-                          maxLength={500}
+                          maxLength={1000}
                           rows={5}
           />
 

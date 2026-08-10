@@ -16,7 +16,7 @@
     "#services/*": "./src/services/*",
     "#repositories/*": "./src/repositories/*",
     "#config/*": "./src/config/*",
-    "#middlewares/*": "./src/middleswares/*",
+    "#middlewares/*": "./src/middlewares/*",
     "#schemas/*": "./src/schemas/*"
   },
   "dependencies": {

@@ -53,13 +53,13 @@ export function getFormByIdRepository(id) {
 
 export function createFormRepository(newForm) {
   return new Promise((res, rej) => {
-    const { name, whatsappNumber, email, contactReason, ContactMessage } = newForm;
+    const { name, whatsapp_number, email, contact_reason, contact_message } = newForm;
     db.run(
       `
         INSERT INTO contact_form (name, whatsapp_number, email, contact_reason, contact_message) 
         VALUES (?, ?, ?, ?, ?)
       `,
-      [name, whatsappNumber, email, contactReason, ContactMessage],
+      [name, whatsapp_number, email, contact_reason, contact_message],
       function(err) {
         if(err) {
           rej(err);
