@@ -9,6 +9,29 @@ import { TextareaField } from '../TextareaField/TextareaField.jsx';
 import { mailContact } from '@/assets/images';
 
 export function ContactModal({ updateWrapper }) {
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const url = 'http://localhost:3001/forms/';
+    const formData = new FormData(event.currentTarget);
+    const objFormData = Object.fromEntries(formData.entries());
+    const rawResponse = await fetch(
+      url,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(objFormData)
+      }
+    );
+    const content = await rawResponse.json();
+    console.log(`the content from the fetch is`);
+    console.log(content);
+    console.log(content.message);
+    console.log(objFormData);
+  }
+
   return (
     <div className='contact-modal-overlay'>
       <section className='contact-modal-section border-shdw-yellow'>
@@ -20,7 +43,7 @@ export function ContactModal({ updateWrapper }) {
           <span onClick={updateWrapper}>X</span>
         </div>
 
-        <form action="POST">
+        <form onSubmit={handleSubmit}>
           <div className='figure-container'>
             <figure>
               <img src={mailContact} alt="mail-contact" />
@@ -29,13 +52,13 @@ export function ContactModal({ updateWrapper }) {
               <InputField type={'text'} 
                           placeholder={'Insira seu Nome Completo'} 
                           labelText={'Nome Completo:'} 
-                          inputIdName={'name'} 
+                          inputName={'name'} 
                           isRequired={true}
               />
               <InputField type={'tel'} 
                           placeholder={'Insira o número do seu WhatsApp'} 
                           labelText={'Seu WhatsApp:'} 
-                          inputIdName={'whatsapp-number'} 
+                          inputName={'whatsapp_number'} 
                           isRequired={true}
               />
             </div>
@@ -43,15 +66,15 @@ export function ContactModal({ updateWrapper }) {
           <InputField type={'email'} 
                       placeholder={'Insira seu Email'} 
                       labelText={'Seu Email:'} 
-                      inputIdName={'email'} 
+                      inputName={'email'} 
           />
           <InputField type={'text'} 
                       placeholder={'Insira o Motivo do Contato'} 
                       labelText={'Motivo do Contato:'} 
-                      inputIdName={'contact-reason'} 
+                      inputName={'contact_reason'} 
                       isRequired={true}
           />
-          <TextareaField textIdName={'textarea'}
+          <TextareaField textIdName={'contact_message'}
                           labelText={'Mensagem:'}
                           placeholder={'Escreva sua Mensagem aqui...'}
                           maxLength={1000}

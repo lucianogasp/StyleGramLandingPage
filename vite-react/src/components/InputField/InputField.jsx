@@ -1,11 +1,11 @@
 // import modules
 import './InputField.css';
 
-export function InputField({ type, placeholder, labelText, inputIdName, isRequired = false }) {
+export function InputField({ type, placeholder, labelText, inputName, isRequired=false }) {
   return (
     <section className='input-field-section'>
-      <label htmlFor={inputIdName}>{labelText}</label>
-      <input id={inputIdName} type={type} placeholder={placeholder} required={isRequired} />
+      <label htmlFor={inputName}>{labelText}</label>
+      <input name={inputName} id={inputName} type={type} placeholder={placeholder} required={isRequired} />
     </section>
   )
 }
