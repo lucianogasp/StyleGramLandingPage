@@ -17,7 +17,8 @@
     "#repositories/*": "./src/repositories/*",
     "#config/*": "./src/config/*",
     "#middlewares/*": "./src/middlewares/*",
-    "#schemas/*": "./src/schemas/*"
+    "#schemas/*": "./src/schemas/*",
+    "#errors/*": "./src/errors/*"
   },
   "dependencies": {
     "cors": "^2.8.6",
