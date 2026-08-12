@@ -3,10 +3,9 @@ import express from "express";
 import 'dotenv/config';
 import cors from 'cors';
 
-// import local modules
+// import routes
 import contactForm_routes from '#routes/contactForm.routes.js';
 
-// Config server
 const PORT = process.env.PORT || 3000;
 const app = express();
 

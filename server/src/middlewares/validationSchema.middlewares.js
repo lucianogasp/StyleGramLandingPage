@@ -8,7 +8,9 @@ export const validateFormSchema = (req, res, next) => {
     next();
   } catch(err) {
     if(err instanceof z.ZodError) {
-      res.status(400).json({ error: err.issues });
+      return res.status(400).json({ error: err.issues });
+    } else {
+      return res.status(500).json({ error: "Internal Server Error" });
     }
   }
 }

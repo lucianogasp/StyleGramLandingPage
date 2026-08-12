@@ -4,7 +4,9 @@ import {
   getFormByIdRepository, 
   createFormRepository, 
   updateFormByIdRepository, 
-  deleteFormByIdRepository 
+  deleteFormByIdRepository, 
+  findFormByEmailRepository,
+  findFormByWhatsappNumberRepository
 } from '#repositories/contactForm.repositories.js';
 
 export async function getAllFormService() {
@@ -19,6 +21,14 @@ export async function getFormByIdService(id) {
 }
 
 export async function createFormService(newForm) {
+  const {whatsapp_number, email } = newForm;
+
+  const formByEmail = await findFormByEmailRepository(email);
+  if(formByEmail) throw new Error('Email form already exists');
+
+  const formByWhatappNumber = await findFormByWhatsappNumberRepository(whatsapp_number);
+  if (formByWhatappNumber) throw new Error('Whatsapp Number form already exists');
+
   const formMessage = await createFormRepository(newForm);
   return formMessage;
 }

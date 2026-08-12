@@ -12,6 +12,7 @@ video {
   align-items: center;
 
   position: relative;
+  min-width: 86rem;
 }
 
 .video-text-container {
@@ -20,12 +21,13 @@ video {
   align-items: center;
   gap: 3rem;
 
-  max-width: 35rem;
+  width: 40%;
   max-height: 6.5rem;
 
   position: absolute;
-  top: calc(50% - 6.5rem / 2);
-  left: calc(50% -40rem / 2 );
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
 }
 .video-text-container h1 {
   text-align: center;

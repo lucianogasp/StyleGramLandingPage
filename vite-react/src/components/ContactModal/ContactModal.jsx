@@ -15,21 +15,29 @@ export function ContactModal({ updateWrapper }) {
     const url = 'http://localhost:3001/forms/';
     const formData = new FormData(event.currentTarget);
     const objFormData = Object.fromEntries(formData.entries());
-    const rawResponse = await fetch(
-      url,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(objFormData)
+    try {
+      const rawResponse = await fetch(
+        url,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(objFormData)
+        }
+      );
+      const content = await rawResponse.json();
+
+      if(!rawResponse.ok) {
+        console.error(content);
+        return;
       }
-    );
-    const content = await rawResponse.json();
-    console.log(`the content from the fetch is`);
-    console.log(content);
-    console.log(content.message);
-    console.log(objFormData);
+      
+      console.log('SUCESSO na comunicação com a API:', content);
+
+    } catch(err) {
+      console.error('ERRO de comunicação com a API: ', err);
+    }
   }
 
   return (

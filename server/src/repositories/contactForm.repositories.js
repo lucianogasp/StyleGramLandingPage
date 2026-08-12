@@ -71,6 +71,44 @@ export function createFormRepository(newForm) {
   });
 }
 
+export function findFormByWhatsappNumberRepository(whatsapp_number) {
+  return new Promise((res, rej) => {
+    db.get(
+      `
+        SELECT * FROM contact_form
+        WHERE whatsapp_number = ?
+      `,
+      [whatsapp_number],
+      function (err, row) {
+        if(err) {
+          rej(err);
+        } else {
+          res(row);
+        }
+      }
+    );
+  });
+}
+
+export function findFormByEmailRepository(email) {
+  return new Promise((res, rej) => {
+    db.get(
+      `
+        SELECT * FROM contact_form
+        WHERE email = ?
+      `,
+      [email],
+      function(err, row) {
+        if(err) {
+          rej(err);
+        } else {
+          res(row);
+        }
+      }
+    );
+  });
+}
+
 export function updateFormByIdRepository(id, newForm) {
   return new Promise((res, rej) => {
     const fields = ['name', 'whatsapp_number', 'email', 'contact_reason', 'contact_message'];
