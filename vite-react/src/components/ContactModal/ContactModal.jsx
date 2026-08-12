@@ -12,7 +12,7 @@ export function ContactModal({ updateWrapper }) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    const url = 'http://localhost:3001/forms/';
+    const url = 'https://stylegramlandingpageserver-production.up.railway.app/forms';
     const formData = new FormData(event.currentTarget);
     const objFormData = Object.fromEntries(formData.entries());
     try {
@@ -27,7 +27,7 @@ export function ContactModal({ updateWrapper }) {
         }
       );
       const content = await rawResponse.json();
-
+      
       if(!rawResponse.ok) {
         console.error(content);
         return;
