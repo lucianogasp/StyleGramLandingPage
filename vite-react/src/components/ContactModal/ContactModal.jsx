@@ -12,7 +12,7 @@ export function ContactModal({ updateWrapper }) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    const url = 'https://stylegramlandingpageserver-production.up.railway.app/forms';
+    const url = 'https://stylegramlandingpage.onrender.com/forms';
     const formData = new FormData(event.currentTarget);
     const objFormData = Object.fromEntries(formData.entries());
     try {

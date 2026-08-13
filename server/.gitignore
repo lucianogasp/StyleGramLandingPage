@@ -9,6 +9,7 @@ lerna-debug.log*
 
 # Packages / Modules
 node_modules
+*.sqlite
 
 # Editor directories and files
 .vscode/*
