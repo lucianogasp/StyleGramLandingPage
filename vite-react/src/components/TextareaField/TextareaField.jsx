@@ -1,5 +1,5 @@
 // import modules
-import './textareaField.css';
+import './TextareaField.css';
 
 export function TextareaField({ textIdName, labelText, placeholder, maxLenght, rows, isRequired=false }) {
   return (
