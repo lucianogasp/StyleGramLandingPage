@@ -29,14 +29,16 @@ export function ContactModal({ updateWrapper }) {
       const content = await rawResponse.json();
       
       if(!rawResponse.ok) {
-        console.error(content);
+        console.error('The fetch response return an error: ', content);
         return;
       }
       
       console.log('SUCESSO na comunicação com a API:', content);
+      alert('Os dados do seu formulário foram enviados com sucesso!');
 
     } catch(err) {
       console.error('ERRO de comunicação com a API: ', err);
+      alert('Erro ao enviar dados do forumulário...');
     }
   }
 

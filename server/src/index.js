@@ -2,7 +2,6 @@
 import express from "express";
 import 'dotenv/config';
 import cors from 'cors';
-import db from '#config/database.js';
 
 // import routes
 import contactForm_routes from '#routes/contactForm.routes.js';
@@ -12,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:5173'
+  origin: 'https://stylegram-landingpage.vercel.app'
 }));
 app.use(contactForm_routes);
 
