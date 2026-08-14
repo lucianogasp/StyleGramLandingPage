@@ -33,11 +33,7 @@ export function Header() {
             </h2>
           </li>
           <li>
-            <h2>
-            <Link to='/login'
-                  className='login-button'
-            >Fazer Login</Link>
-            </h2>
+            <h2 className='login-button'>Fazer Login</h2>
           </li>
         </ul>
       </nav>
