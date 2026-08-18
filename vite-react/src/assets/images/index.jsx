@@ -14,6 +14,7 @@ export { default as figParEmpr2 } from './list-para-empresas2.png';
 export { default as figParEmpr3 } from './list-para-empresas3.png';
 export { default as figParEmpr4 } from './list-para-empresas4.png';
 export { default as figParEmpr5 } from './list-para-empresas5.png';
-export { default as heitorFt } from './heitor-ft-edited.png'
-export { default as mateusFt } from './mateus-ft-edited.jpeg'
-export { default as lucianoFt } from './luciano-ft-edited.jpeg'
+export { default as defaultFt } from './default-ft-edited.jpg';
+export { default as heitorFt } from './heitor-ft-edited.png';
+export { default as mateusFt } from './mateus-ft-edited.jpeg';
+export { default as lucianoFt } from './luciano-ft-edited.jpeg';
